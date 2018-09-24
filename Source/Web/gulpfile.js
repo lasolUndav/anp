@@ -8,11 +8,11 @@ var plugins = require("gulp-load-plugins")({
 var runSequence = require('run-sequence').use(gulp);
 
 var bower_dir = './bower_components';
-var dev_dir = './anp';
+var dev_dir = './';
 var index_file = '/index.html';
 
-var app_dir = './anp/app';
-var assets_dir = './anp/assets';
+var app_dir = './anp';
+var assets_dir = './assets';
 var assets_dir_relative = '../assets';
 var js_dir =  assets_dir + '/js';
 var css_dir =  assets_dir + '/css';
