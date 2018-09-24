@@ -25,7 +25,7 @@ var js_file =  'all.min.js';
 var css_file =  'all.min.css';
 var libs_js_file =  'libs.min.js';
 var libs_css_file =  'libs.min.css';
-var app_file = 'app.min.js';
+var app_file = 'anp.min.js';
 
 /**********************************************************************************************************************/
 /*** Development tasks
