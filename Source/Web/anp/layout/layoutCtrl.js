@@ -17,5 +17,10 @@ angular.module('Layout')
     .controller('layout.footer', ['$scope', '$controller',
         function ($scope, $controller) {
             $controller('layoutCtrl', { $scope: $scope });
+            $scope.setup = function(){
+                $scope.anio = 2018;
+                $scope.nombre = "ANP";
+            }
+            $scope.setup();
         }
     ]);
