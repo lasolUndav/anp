@@ -1,9 +1,6 @@
-<div ng-controller = 'home.anpList'>
-  <md-list-item class="secondary-button-padding">
-    <p>Clicking the button to the right will fire the secondary action</p>
-    <md-button class="md-secondary" ng-click="mostrarAreaNaturalProtegida($event)">More Info</md-button>
-  </md-list-item>
-  <md-list-item class="secondary-button-padding">
+<div ng-controller = "home.anpList" ng-repeat="area in AreasNaturalesProtegidas ng-cloak>
+  <p>{{area.Nombre}}</p>
+  <md-list-item class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event)">
     <p>Click anywhere to fire the primary action, or the button to fire the secondary</p>
     <md-button class="md-secondary" ng-click="mostrarAreaNaturalProtegida($event)">More Info</md-button>
   </md-list-item>

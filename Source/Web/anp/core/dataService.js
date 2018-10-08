@@ -3,6 +3,7 @@
 angular.module('Core').factory('dataService', [
     function () {
         // Initialize Firebase
+
         var config = {
           apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
           authDomain: "apn-dev-95587.firebaseapp.com",
@@ -12,6 +13,7 @@ angular.module('Core').factory('dataService', [
           messagingSenderId: "645309354612"
         };
         firebase.initializeApp(config);
+
         return {
             getData: function(referenceName, callback, param){
                 var dataRef = firebase.database().ref(referenceName);

@@ -1,1 +1,5 @@
-<div class="contentBody" ui-view></div>
+<div class="contentBody" ng-controller="layout.content" ui-view>
+  <md-list-item ng-repeat="area in anps" class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event)">
+    <p>{{area.Nombre}}</p>
+  </md-list-item>
+</div>
