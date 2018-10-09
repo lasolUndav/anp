@@ -8,6 +8,7 @@
     "firebase": "^3.1.0"
   },
   "devDependencies": {
+    "bower": "~1.8.0",
     "bower-files": "^3.13.3",
     "gulp": "~3.9.1",
     "gulp-angular-filesort": "^1.1.1",
@@ -21,12 +22,11 @@
     "gulp-inject": "^4.1.0",
     "gulp-install": "^0.6.0",
     "gulp-jshint": "^2.0.1",
-    "gulp-load-plugins": "^1.2.4",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-uglify": "^1.5.4",
     "jshint": "^2.9.2",
-    "run-sequence": "^1.2.2",
     "node": "0.0.0",
-    "bower": "~1.8.0"
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

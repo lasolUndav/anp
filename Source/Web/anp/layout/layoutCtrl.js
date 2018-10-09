@@ -9,8 +9,11 @@ angular.module('Layout')
 angular.module('Layout')
     .controller('layout.header', ['$scope', '$controller',
         function ($scope, $controller) {
-
             $controller('layoutCtrl', { $scope: $scope });
+            $scope.setup=function(){
+            $scope.title='Áreas Naturales Protegidas';
+          }
+            $scope.setup();
         }
     ]);
 
@@ -40,10 +43,8 @@ angular.module('Layout')
           $scope.mostrarAreaNaturalProtegida = function(event) {
             $mdDialog.show(
               $mdDialog.alert()
-              .title('ANP')
-              .textContent('Secondary actions can be used for one click actions')
-              .ariaLabel('Secondary click demo')
-              .ok('Awesome!')
+              .title('Área Natural Protegida')
+              .ok('Obtener informacion')
               .targetEvent(event)
             );
           }
