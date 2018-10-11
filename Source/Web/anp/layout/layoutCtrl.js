@@ -41,23 +41,24 @@ angular.module('Layout')
               $scope.$apply()
             });
           }
-
-          $scope.mostrarAreaNaturalProtegida = function(event) {
-            $mdDialog.show(
-              $mdDialog.alert()
-              .title('Área Natural Protegida')
-              .ok('Obtener informacion')
-              .targetEvent(event)
+          $scope.mostrarAreaNaturalProtegida = function(event, area) {
+            var inyectarea =function ($scope, area){
+              $scope.area = area
+            }
+            $mdDialog.show({
+              templateUrl : './layout/anpPopUp.html',
+              parent: angular.element(document.body),
+              targetEvent: event,
+              clickOutsideToClose:true,
+              locals: {area: area},
+              controller: inyectarea
+            }
             );
           }
 
           $scope.loadANP();
-
           $scope.search= function(){
                 $scope.anpsFiltrados = $filter('filter')($scope.anps, $scope.searchText);
         };
-
         }
-
-
       ]);
