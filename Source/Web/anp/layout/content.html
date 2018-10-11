@@ -1,8 +1,13 @@
 <div ng-controller="layout.content" layout-align="center center">
-<div class="contentBody">
-  <md-list-item ng-repeat="area in anps | orderBy:'Parque':'true'" class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event)" style="border-bottom: dashed 1px blue">
-    <span>{{area.Nombre}}</span>
+  <md-input-container class="md-icon-float md-block" flex="30" style="margin-left: 15px;" >
+    <label style="color:navy"> Buscar:</label>
+        <input ng-model="searchText" ng-change="search()" >
+  </md-input-container>
 
-  </md-list-item>
-</div>
+
+  <div class="contentBody">
+    <md-list-item ng-repeat="area in anpsFiltrados | orderBy:'Parque':'true'" class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event)" style="border-bottom: dashed 1px blue">
+      <span>{{area.Nombre}}</span>
+    </md-list-item>
+  </div>
 </div>

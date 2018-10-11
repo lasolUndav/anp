@@ -31,15 +31,17 @@ angular.module('Layout')
     ]);
 
     angular.module('Layout')
-        .controller('layout.content', ['$scope','$mdDialog','homeService',
-        function ($scope, $mdDialog,homeService) {
+        .controller('layout.content', ['$scope','$mdDialog','homeService', '$filter',
+        function ($scope, $mdDialog,homeService,$filter) {
 
           $scope.loadANP=function(){
             homeService.getAreasNaturalesProtegidas(function(ANPs){
               $scope.anps = ANPs;
+              $scope.search()
               $scope.$apply()
             });
           }
+
           $scope.mostrarAreaNaturalProtegida = function(event) {
             $mdDialog.show(
               $mdDialog.alert()
@@ -50,5 +52,12 @@ angular.module('Layout')
           }
 
           $scope.loadANP();
+
+          $scope.search= function(){
+                $scope.anpsFiltrados = $filter('filter')($scope.anps, $scope.searchText);
+        };
+
         }
+
+
       ]);
