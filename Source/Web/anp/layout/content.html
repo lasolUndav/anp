@@ -1,6 +1,6 @@
 <div ng-controller="layout.content" layout-align="center center">
 <div class="contentBody">
-  <md-list-item ng-repeat="area in anps" class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event)" style="border-bottom: dashed 1px blue">
+  <md-list-item ng-repeat="area in anps | orderBy:'Parque':'true'" class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event)" style="border-bottom: dashed 1px blue">
     <span>{{area.Nombre}}</span>
 
   </md-list-item>
