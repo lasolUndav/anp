@@ -1,13 +1,33 @@
-<div class="md-dialog-content-body ng-scope" style="margin:10px" >
+<header>
   <h3 style= "text-align: center; "> {{area.Nombre}} </h3>
-  <p> Administracion : {{area.Administracion}}</p>
-  <p> Año de Creacion : {{area.AnioCreacion}}</p>
-  <p> Categoria internacional : {{area.CategoriaInternacional}}</p>
-  <p> Ecorregion : {{area.Ecorregion}}</p>
-  <p> Año de Creacion : {{area.AnioCreacion}}</p>
-  <p ng-show="area.PlanManejo"> Plan de manejo : {{area.PlanManejo}}</p>
-  <p> Superficie : {{area.Superficie}}</p>
-  <p ng-show="area.Guardaparques"> Guardaparques : {{area.Guardaparques}}</p>
-  <p ng-show="area.Infraestructura"> Infraestructura : {{area.Infraestructura}}</p>
-  <p ng-show="area.AtencionVisitantes"> Atencion a visitantes : {{area.AtencionVisitantes}}</p>
+</header>
+<div class="md-dialog-content-body ng-scope" style="margin:10px" >
+  <p> <span>Administracion :</span> {{area.Administracion}}</p>
+  <p> <span>Año de Creacion :</span> {{area.AnioCreacion}}</p>
+  <p> <span>Categoria internacional :</span> {{area.CategoriaInternacional}}</p>
+  <p> <span>Ecorregion :</span> {{area.Ecorregion}}</p>
+  <p> <span>Año de Creacion :</span> {{area.AnioCreacion}}</p>
+  <p ng-show="area.PlanManejo"> <span>Plan de manejo :</span> {{area.PlanManejo}}</p>
+  <p> <span>Superficie :</span> {{area.Superficie}}</p>
+  <p ng-show="area.Guardaparques"> <span>Guardaparques :</span> {{area.Guardaparques}}</p>
+  <p ng-show="area.Infraestructura"> <span>Infraestructura :</span> {{area.Infraestructura}}</p>
+  <p ng-show="area.AtencionVisitantes"> <span>Atencion a visitantes :</span> {{area.AtencionVisitantes}}</p>
 </div>
+
+<style>
+  header{
+    background: #143FA6;
+    color: white;
+    padding: 5px;
+  }
+  .md-dialog-content-body p span{
+    font-weight: bold;
+  }
+  p:nth-child(odd){
+    background: #E8E8E8;
+    padding: 5px;
+  }
+  p{
+    border-radius: 8px;
+  }
+</style>
