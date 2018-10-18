@@ -6,8 +6,20 @@
 
 
   <div class="contentBody">
-    <md-list-item ng-repeat="area in anpsFiltrados | orderBy:'Parque':'true'" class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event, area)" style="border-bottom: dashed 1px blue">
+    <md-list-item ng-repeat="area in anpsFiltrados | orderBy:'Parque':'true'" class="secondary-button-padding" ng-click="mostrarAreaNaturalProtegida($event, area)">
       <span>{{area.Nombre}}</span>
     </md-list-item>
   </div>
 </div>
+
+<style>
+    .secondary-button-padding{
+      border-radius: 8px;
+    }
+    .secondary-button-padding:nth-child(odd){
+      background: #E8E8E8;
+    }
+    .secondary-button-padding:hover{
+      border: 2px solid #AFAFAF;
+    }
+</style>
