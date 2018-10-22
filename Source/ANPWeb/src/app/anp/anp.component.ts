@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AnpListComponent } from './anp-list/anp-list.component'
+import { AnpListComponent } from '../anp-list/anp-list.component'
 
 @Component({
   selector: 'app-anp',
