@@ -1,3 +1,5 @@
-<p>
-  anp-list works!
-</p>
+<ul>
+  <li *ngFor = "let area of areas | async">
+    {{area.Nombre}}
+  </li>
+</ul>
