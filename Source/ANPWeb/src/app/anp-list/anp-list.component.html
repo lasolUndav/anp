@@ -1,14 +1,5 @@
-<!-- <ul>
-  <li *ngFor = "let area of areas | async">
-    {{area.Nombre}}
-  </li>
-</ul> -->
-<!-- <mat-form-field>
-  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtrar">
-</mat-form-field> -->
-
 <div class="mat-elevation-z8">
-  <table mat-table [dataSource]="areas" multiTemplateDataRows matSort>
+  <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort>
     
     <ng-container matColumnDef="Nombre">
       <th mat-header-cell *matHeaderCellDef> Nombre </th>
@@ -57,6 +48,7 @@
     </tr>
     <tr class='area-detail-row' mat-row *matRowDef="let row; columns: ['expandedDetail']"></tr>
   </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
 </div>
 
 

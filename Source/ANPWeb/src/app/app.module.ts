@@ -9,10 +9,12 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatTableModule} from '@angular/material/table';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatTableModule} from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatPaginatorModule} from '@angular/material/paginator';
+
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
   authDomain: "apn-dev-95587.firebaseapp.com",
@@ -28,7 +30,6 @@ var config = {
     AppComponent,
     AnpListComponent,
     AnpComponent,
-    
   ],
   imports: [
     BrowserAnimationsModule,
@@ -42,7 +43,8 @@ var config = {
     MatTableModule,
     FormsModule, 
     ReactiveFormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatPaginatorModule
   ],
   bootstrap: [AppComponent]
 })
