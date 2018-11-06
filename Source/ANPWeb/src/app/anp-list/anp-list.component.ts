@@ -1,7 +1,7 @@
 import { Component, ViewChild, OnInit} from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
+import { MatPaginator, MatSort, MatTableDataSource,MatInputModule } from '@angular/material';
 
 
 @Component({
@@ -27,9 +27,11 @@ export class AnpListComponent implements OnInit {
     db.list('AreasNaturalesProtegidas').valueChanges().subscribe(results=>{
       this.dataSource = new MatTableDataSource(results);
       this.dataSource.paginator = this.paginator;
-    }); 
+    });
   }
-
+  applyFilter(filterValue: string) {
+   this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;

@@ -12,8 +12,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatTableModule} from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule} from '@angular/material/form-field';
-import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatFormFieldModule, MatPaginatorModule, MatInputModule } from '@angular/material';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -41,10 +40,11 @@ var config = {
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     AngularFireDatabaseModule,
     MatTableModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule
   ],
   bootstrap: [AppComponent]
 })
