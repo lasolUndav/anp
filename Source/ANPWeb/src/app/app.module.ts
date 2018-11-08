@@ -12,7 +12,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatTableModule} from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule, MatPaginatorModule, MatInputModule } from '@angular/material';
+import { MatPaginatorIntl, MatFormFieldModule, MatPaginatorModule, MatInputModule } from '@angular/material';
+import { PaginatorProvider } from './shared/PaginatorProvider';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -46,6 +47,9 @@ var config = {
     MatPaginatorModule,
     MatInputModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [
+    { provide: MatPaginatorIntl, useClass: PaginatorProvider }
+  ]
 })
 export class AppModule { }
