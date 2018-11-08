@@ -13,6 +13,8 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatTableModule} from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule, MatPaginatorModule, MatInputModule } from '@angular/material';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -29,6 +31,8 @@ var config = {
     AppComponent,
     AnpListComponent,
     AnpComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserAnimationsModule,
