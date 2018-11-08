@@ -14,6 +14,11 @@ import { MatTableModule} from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatPaginatorIntl, MatFormFieldModule, MatPaginatorModule, MatInputModule } from '@angular/material';
 import { PaginatorProvider } from './shared/PaginatorProvider';
+import { DashCardComponent } from './dash-card/dash-card.component';
+import { MatCardModule } from '@angular/material/card';
+import { Ng2OdometerModule } from 'ng2-odometer';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatIconModule } from '@angular/material/icon';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -30,6 +35,7 @@ var config = {
     AppComponent,
     AnpListComponent,
     AnpComponent,
+    DashCardComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -45,7 +51,11 @@ var config = {
     ReactiveFormsModule,
     MatFormFieldModule,
     MatPaginatorModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule,
+    MatCardModule,
+    Ng2OdometerModule,
+    FlexLayoutModule
   ],
   bootstrap: [AppComponent],
   providers: [
