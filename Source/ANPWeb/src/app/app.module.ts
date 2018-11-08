@@ -19,6 +19,8 @@ import { MatCardModule } from '@angular/material/card';
 import { Ng2OdometerModule } from 'ng2-odometer';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -36,6 +38,8 @@ var config = {
     AnpListComponent,
     AnpComponent,
     DashCardComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserAnimationsModule,
