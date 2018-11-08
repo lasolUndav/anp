@@ -1,8 +1,7 @@
 import { Component, ViewChild, OnInit} from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { MatPaginator, MatSort, MatTableDataSource,MatInputModule } from '@angular/material';
-
+import { MatPaginatorIntl, MatPaginator, MatSort, MatTableDataSource,MatInputModule } from '@angular/material';
 
 @Component({
   selector: 'app-anp-list',
@@ -16,7 +15,7 @@ import { MatPaginator, MatSort, MatTableDataSource,MatInputModule } from '@angul
     ])
   ]
 })
-export class AnpListComponent implements OnInit {
+export class AnpListComponent implements OnInit{
   columnsToDisplay = ['Nombre', 'Localidad', 'Municipio','Ciudad', 'Infraestructura','Horario'];
   expandedElement: any;
   dataSource: MatTableDataSource<any>;

@@ -12,7 +12,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatTableModule} from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule, MatPaginatorModule, MatInputModule } from '@angular/material';
+import { PaginatorProvider} from './shared/PaginatorProvider';
+import { MatFormFieldModule, MatPaginatorModule, MatInputModule, MatPaginatorIntl } from '@angular/material';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -50,6 +51,9 @@ var config = {
     MatPaginatorModule,
     MatInputModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [
+    { provide: MatPaginatorIntl, useClass: PaginatorProvider }
+  ]
 })
 export class AppModule { }
