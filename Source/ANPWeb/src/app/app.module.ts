@@ -10,17 +10,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatTableModule} from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatPaginatorIntl, MatFormFieldModule, MatPaginatorModule, MatInputModule } from '@angular/material';
-import { PaginatorProvider } from './shared/PaginatorProvider';
 import { DashCardComponent } from './dash-card/dash-card.component';
-import { MatCardModule } from '@angular/material/card';
-import { Ng2OdometerModule } from 'ng2-odometer';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MaterialModule } from './material.module';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -40,6 +34,7 @@ var config = {
     DashCardComponent,
     HeaderComponent,
     FooterComponent,
+
   ],
   imports: [
     BrowserAnimationsModule,
@@ -50,20 +45,11 @@ var config = {
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     AngularFireDatabaseModule,
-    MatTableModule,
     FormsModule,
     ReactiveFormsModule,
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatInputModule,
-    MatIconModule,
-    MatCardModule,
-    Ng2OdometerModule,
-    FlexLayoutModule
+    MaterialModule
   ],
   bootstrap: [AppComponent],
-  providers: [
-    { provide: MatPaginatorIntl, useClass: PaginatorProvider }
-  ]
+  
 })
 export class AppModule { }

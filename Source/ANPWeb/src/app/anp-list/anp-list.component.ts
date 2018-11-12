@@ -1,7 +1,7 @@
 import { Component, ViewChild, OnInit} from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { MatPaginatorIntl, MatPaginator, MatSort, MatTableDataSource,MatInputModule } from '@angular/material';
+import {  MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 
 @Component({
   selector: 'app-anp-list',
