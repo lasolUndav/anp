@@ -39,7 +39,7 @@
     <ng-container matColumnDef="expandedDetail">
       <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
         <div class="area-element-detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
-          Descripcion
+          <app-anp-details [element]="element"></app-anp-details>
         </div>
       </td>
     </ng-container>

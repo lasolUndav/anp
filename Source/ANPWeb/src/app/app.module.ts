@@ -15,6 +15,7 @@ import { DashCardComponent } from './dash-card/dash-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './material.module';
+import { AnpDetailsComponent } from './anp-details/anp-details.component';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -34,6 +35,7 @@ var config = {
     DashCardComponent,
     HeaderComponent,
     FooterComponent,
+    AnpDetailsComponent,
 
   ],
   imports: [

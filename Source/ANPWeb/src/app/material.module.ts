@@ -10,6 +10,7 @@ import {
    MatCardModule,
    MatIconModule,
    MatSortModule, 
+   MatGridListModule,
   } from '@angular/material';
   
 import { PaginatorProvider } from './shared/PaginatorProvider';
@@ -27,6 +28,7 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
     MatSortModule,
     Ng2OdometerModule,
     FlexLayoutModule,
+    MatGridListModule,
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: PaginatorProvider }
