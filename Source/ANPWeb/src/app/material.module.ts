@@ -11,9 +11,11 @@ import {
    MatIconModule,
    MatSortModule, 
    MatGridListModule,
+   MatExpansionModule,
   } from '@angular/material';
   
 import { PaginatorProvider } from './shared/PaginatorProvider';
+
 
 
 @NgModule({
@@ -29,6 +31,7 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
     Ng2OdometerModule,
     FlexLayoutModule,
     MatGridListModule,
+    MatExpansionModule,
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: PaginatorProvider }
