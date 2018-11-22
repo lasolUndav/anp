@@ -32,3 +32,8 @@ th {
 tr.area-element-row:hover {
     cursor: pointer;
 }
+
+.area-element-detail{
+  margin: 15px 0;
+  padding: 15px 0;
+}

@@ -1,17 +1,22 @@
 .area-element-imagen {
-    min-width: 80px;
-    border: 2px solid black;
-    padding: 8px;
-    font-weight: lighter;
-    margin: 8px 0;
-    height: 104px;
-    width: 100px;
-  }
-  .area-element-descripcion{
-    padding: 16px;
-  }
+  min-width: 80px;
+  margin: 30px;
+  height: 150px;
+  width: 150px;
+}
 
-  .area-element-detail{
-    overflow: hidden;
-    display: flex;
-  }
+.image{
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.area-element-detail{
+  padding: 10px;
+  text-align: center;
+  overflow: visible;
+}
+
+.descripcion{
+  width: 70%;
+}
