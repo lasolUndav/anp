@@ -25,7 +25,6 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
     MatPaginatorModule,
     MatInputModule,
     MatCardModule,
-    MatCardModule,
     MatIconModule,
     MatSortModule,
     Ng2OdometerModule,

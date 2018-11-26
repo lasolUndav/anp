@@ -25,6 +25,8 @@ var config = {
   storageBucket: "apn-dev-95587.appspot.com",
   messagingSenderId: "645309354612"
 };
+import { GraphicsComponent } from './graphics/graphics.component';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 
 @NgModule({
@@ -36,6 +38,7 @@ var config = {
     HeaderComponent,
     FooterComponent,
     AnpDetailsComponent,
+    GraphicsComponent,
 
   ],
   imports: [
@@ -49,7 +52,8 @@ var config = {
     AngularFireDatabaseModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    GoogleChartsModule.forRoot(),
   ],
   bootstrap: [AppComponent],
   
