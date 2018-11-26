@@ -11,11 +11,13 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DashCardComponent } from './dash-card/dash-card.component';
+import { IndicatorComponent } from './indicator/indicator.component'
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './material.module';
 import { AnpDetailsComponent } from './anp-details/anp-details.component';
+import { GoogleChartsModule } from 'angular-google-charts';
+import {  GraphicsComponent } from './graphics/graphics.component'
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -25,8 +27,6 @@ var config = {
   storageBucket: "apn-dev-95587.appspot.com",
   messagingSenderId: "645309354612"
 };
-import { GraphicsComponent } from './graphics/graphics.component';
-import { GoogleChartsModule } from 'angular-google-charts';
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
     AppComponent,
     AnpListComponent,
     AnpComponent,
-    DashCardComponent,
+    IndicatorComponent,
     HeaderComponent,
     FooterComponent,
     AnpDetailsComponent,
@@ -53,7 +53,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    GoogleChartsModule.forRoot(),
+    GoogleChartsModule.forRoot()
   ],
   bootstrap: [AppComponent],
   
