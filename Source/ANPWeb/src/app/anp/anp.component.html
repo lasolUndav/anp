@@ -4,12 +4,13 @@
             <mat-card-content>
                 <div fxLayout="row" fxLayoutWrap>
                     <div *ngFor="let dash of dashCard" fxFlex.lt-sm="100" fxFlex.sm="50" fxFlex.md="25">
-                        <app-dash-card [dashData]="dash"></app-dash-card>
+                        <app-indicator [dashData]="dash"></app-indicator>
                     </div>
                 </div>
 
                 <div >
                     <app-anp-list></app-anp-list>
+                    <app-graphics></app-graphics>
                 </div>
             </mat-card-content>
         </mat-card>
