@@ -1,0 +1,5 @@
+.map-container { height: 100%; }
+.map-content { display: block; }
+.description { margin-top: 10px; padding: 15px; background-color: bisque; border: 1px solid orange; }
+.description > span { cursor: pointer; }
+li { cursor: pointer;}

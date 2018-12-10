@@ -34,6 +34,7 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: PaginatorProvider }
-  ]
+  ],
+  declarations: []
 })
 export class MaterialModule { }

@@ -1,0 +1,23 @@
+<i class="fa"></i>
+<div style="height: 600px">
+    <x-map #xmap [Options]="_options" [Box]="_box">
+      <x-cluster-layer [GridSize]="150" [ClusteringEnabled]="true" [UseDynamicSizeMarkers]="true" [DynamicMarkerBaseSize]="18" [DynamicMarkerRanges]="_ranges" >
+        <x-map-marker *ngFor="let m of _markers; let i=index" [Latitude]="m.latitude" [Longitude]="m.longitude" [Title]="'My Marker ' + i.toString()" [IconInfo]="_iconInfo">
+            <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox ' + i.toString()" [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+                <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click(i)"></x-info-box-action>
+            </x-info-box>
+        </x-map-marker>
+      </x-cluster-layer>
+    </x-map>
+</div>
+<div class="description">
+  <span *ngIf="_markers.length > 0" (click)="_clear()">Click to Clear Markers</span>
+  <span *ngIf="_markers.length == 0" (click)="_populate()">Click to Populate Markers</span>
+</div>
+<div class="description">
+  This sample shows clustering with x-maps. In this sample, we use the built-in dynamic cluster icon generation wich sizes and colors the cluster 
+  markers using configurable ranges. A click on a cluster marker will zoom into the cluster.       
+</div>
+<div class="description">
+  See <a href="https://github.com/infusion-code/angular-maps">https://github.com/infusion-code/angular-maps</a> for more info. 
+</div> 
