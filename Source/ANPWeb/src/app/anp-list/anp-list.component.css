@@ -23,10 +23,10 @@ tr.area-element-row:not(.area-expanded-row):active {
   font-size: 14px;
   width: 100%;
 }
-
 td,
 th {
   width: 20%;
+  font-style: bold;
 }
 
 tr.area-element-row:hover {
@@ -36,4 +36,17 @@ tr.area-element-row:hover {
 .area-element-detail{
   margin: 15px 0;
   padding: 15px 0;
+}
+
+tr.mat-header-row{
+  background-color:#67A759;
+}
+
+th.mat-header-cell{
+  color:white;
+  
+}
+
+.mat-form-field-autofill-control{
+  color: #000;
 }

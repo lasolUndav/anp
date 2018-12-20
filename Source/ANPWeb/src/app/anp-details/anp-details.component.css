@@ -13,10 +13,14 @@
 
 .area-element-detail{
   padding: 10px;
+  color:white;
   text-align: center;
   overflow: visible;
 }
 
 .descripcion{
+  /*background-color:rgb(102, 187, 106);*/
+  background: -moz-linear-gradient(rgb(132, 161, 108),rgba(158, 202, 101, 0.979));
+  border-radius: 30px;
   width: 70%;
 }
