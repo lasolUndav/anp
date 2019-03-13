@@ -17,7 +17,6 @@ import {
 import { PaginatorProvider } from './shared/PaginatorProvider';
 
 
-
 @NgModule({
   exports: [
     MatTableModule,
