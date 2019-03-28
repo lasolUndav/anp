@@ -16,6 +16,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './material.module';
 import { AnpDetailsComponent } from './anp-details/anp-details.component';
+import { AnpGrillaComponent } from './anp-grilla/anp-grilla.component';
+import { AnpDetailComponent } from './anp-detail/anp-detail.component';
+import { AnpCellComponent } from './anp-cell/anp-cell.component';
 
 
 
@@ -39,6 +42,9 @@ const useBing = false;
     HeaderComponent,
     FooterComponent,
     AnpDetailsComponent,
+    AnpGrillaComponent,
+    AnpDetailComponent,
+    AnpCellComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -55,6 +61,6 @@ const useBing = false;
     BrowserModule,
   ],
   bootstrap: [AppComponent],
-  
+  entryComponents:[AnpDetailComponent],
 })
 export class AppModule { }
