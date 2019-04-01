@@ -13,6 +13,7 @@ import {
    MatGridListModule,
    MatExpansionModule,
    MatDialogModule,
+   MatButtonModule,
   } from '@angular/material';
   
 import { PaginatorProvider } from './shared/PaginatorProvider';
@@ -32,6 +33,7 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
     MatGridListModule,
     MatExpansionModule,
     MatDialogModule,
+    MatButtonModule,
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: PaginatorProvider }
