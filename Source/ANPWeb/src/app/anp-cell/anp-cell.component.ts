@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { MatDialog, MatTableDataSource } from '@angular/material';
 import { AnpDetailComponent } from '../anp-detail/anp-detail.component';
+import { InterfaceElementAnp } from '../interfaceElementAnp'
+
+
 
 @Component({
   selector: 'app-anp-cell',
@@ -9,20 +12,24 @@ import { AnpDetailComponent } from '../anp-detail/anp-detail.component';
 })
 export class AnpCellComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) {  
-  }
+  @Input('elementCell')
+  element: any;
 
+  detalles: any;
+
+  constructor(public dialog: MatDialog) { 
+  this.detalles = this.element;
+  };
+  
   ngOnInit() {
   }
 
-  openData() {
+  openData(element: any) {
     let openDialog = this.dialog.open(AnpDetailComponent, {
       width: '800px'
     });
-
     openDialog.afterClosed().subscribe(result => {
       console.log('Dialogo cerrado')
     });
   }
-
 }

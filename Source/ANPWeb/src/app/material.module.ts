@@ -14,6 +14,8 @@ import {
    MatExpansionModule,
    MatDialogModule,
    MatButtonModule,
+   MatDialogRef,
+   MAT_DIALOG_DATA,
   } from '@angular/material';
   
 import { PaginatorProvider } from './shared/PaginatorProvider';
@@ -34,9 +36,11 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
     MatExpansionModule,
     MatDialogModule,
     MatButtonModule,
+  
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: PaginatorProvider }
+    , { provide: MatDialogRef, useValue: {} } , { provide: MAT_DIALOG_DATA, useValue: [] } 
   ],
   declarations: []
 })

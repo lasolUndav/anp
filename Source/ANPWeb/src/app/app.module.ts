@@ -1,4 +1,4 @@
-import {Component, NgModule, VERSION} from '@angular/core'
+import {Component, NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AnpListComponent } from './anp-list/anp-list.component';
@@ -62,5 +62,6 @@ const useBing = false;
   ],
   bootstrap: [AppComponent],
   entryComponents:[AnpDetailComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

@@ -16,7 +16,7 @@ import {  MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
   ]
 })
 export class AnpListComponent implements OnInit{
-  columnsToDisplay = ['Nombre', 'Localidad', 'Municipio','Ciudad', 'Infraestructura','Horario'];
+  columnsToDisplay = ['Nombre'];
   expandedElement: any;
   dataSource: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator: MatPaginator;

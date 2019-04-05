@@ -1,0 +1,51 @@
+table {
+  width: 100%;
+}
+
+tr.area-detail-row {
+  height: 0;
+}
+
+tr.area-element-row:not(.area-expanded-row):hover {
+  background: #f5f5f5;
+}
+
+tr.area-element-row:not(.area-expanded-row):active {
+background: #efefef;
+}
+
+.area-element-row td {
+border-bottom-width: 0;
+}
+
+.mat-form-field {
+font-size: 14px;
+width: 100%;
+}
+td,
+th {
+width: 20%;
+font-style: bold;
+}
+
+tr.area-element-row:hover {
+cursor: pointer;
+}
+
+.area-element-detail{
+margin: 15px 0;
+padding: 15px 0;
+}
+
+tr.mat-header-row{
+background-color:#67A759;
+}
+
+th.mat-header-cell{
+color:white;
+
+}
+
+.mat-form-field-autofill-control{
+color: #000;
+}

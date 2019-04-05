@@ -19,7 +19,7 @@ tr.area-element-row:not(.area-expanded-row):active {
 }
 
 .mat-form-field {
-  floatLabel: "never";
+ 
   font-size: 14px;
   width: 100%;
 }

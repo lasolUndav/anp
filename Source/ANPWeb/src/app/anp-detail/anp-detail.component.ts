@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { MatDialogRef } from '@angular/material';
+
 
 @Component({
   selector: 'app-anp-detail',
@@ -8,7 +9,12 @@ import { MatDialogRef } from '@angular/material';
 })
 export class AnpDetailComponent implements OnInit {
 
-  constructor(public thisDialogRef: MatDialogRef<AnpDetailComponent>) {}
+  @Input('element')
+  element: any;
+  
+  constructor(public thisDialogRef: MatDialogRef<AnpDetailComponent>) {
+    
+  }
 
   ngOnInit() {
   }
