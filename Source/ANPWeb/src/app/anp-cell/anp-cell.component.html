@@ -1,12 +1,60 @@
-<mat-card>
+ <mat-card>
     <mat-card-title >
         {{element.Nombre}}
     </mat-card-title>
     <mat-card-content>
-        <img src="assets/imagenes/areanatural.jpeg">
-        <button class= "Icon" mat-mini-fab color= "accent" (click)="openData()">
-            <img src="assets/icons/baseline_add_black_24dp.png">
-            
-        </button>
+        <div fxLayout="row">
+            <div fxFlex="300px">            
+                <img src="assets/imagenes/areanatural.jpeg">
+            </div>
+        </div>
+        <div fxLayout="row">
+            <mat-accordion fxFlex="300px">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                    </mat-expansion-panel-header>
+                    <div fxLayout="row"  fxLayoutAlign="center">
+                        <div class="mat-caption" style="font-weight: bold"> 
+                            <a target="_blank" href="https://www.google.com.ar/maps/place/UNDAV+-+Sede+Piñeiro/@-34.6678335,-58.3990904,16z/data=!4m5!3m4!1s0x95bccc99175285c5:0xf1127b65d1fd6569!8m2!3d-34.6685291!4d-58.3981195?hl=es"> 
+                                Como llegar 
+                            </a>
+                        </div>
+                    </div>
+                    <div fxLayout="row">
+                        <div class="mat-caption" style="font-weight: bold">
+                            Ecorregión: 
+                        </div>
+                        <div class="mat-caption" style="margin-bottom: 0px">
+                            {{element.Ecoregion}}
+                        </div>
+                    </div>
+                    <div fxLayout="row">
+                        <div class="mat-caption" style="font-weight: bold">
+                            Ubicación: 
+                        </div>
+                        <div class="mat-caption" style="margin-bottom: 0px">
+                            {{element.Localidad}}, {{element.Municipio}}
+                        </div>
+                    </div>
+                    <div fxLayout="row">
+                        <div class="mat-caption" style="font-weight: bold">
+                            Superficie: 
+                        </div>
+                        <div class="mat-caption" style="margin-bottom: 0px">
+                            {{element.Superficie}} ha.
+                        </div>
+                    </div>
+                    <div fxLayout="row">
+                        <div class="mat-caption" style="font-weight: bold">
+                            Año de creación: 
+                        </div>
+                        <div class="mat-caption" style="margin-bottom: 0px">
+                            {{element.AnioCreacion}}
+                        </div>
+                     </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
     </mat-card-content>
 </mat-card>
+    
