@@ -1,25 +1,24 @@
-    <mat-form-field>
+<div>
+<mat-form-field>
         <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar: ">
     </mat-form-field>
+</div>
 <div class="mat-elevation-z8">
 
+    <mat-card-header class="mat-tipography" style="color: black;">
+        <mat-card-title class="tipo-titulo"><div class="mat-title">
+            Áreas Naturales Protegidas</div>
+        </mat-card-title>
+    </mat-card-header>
 
-<mat-table [dataSource]="dataSource" matSort>
-
-        <mat-grid-list  cols="4"  matColumnDef="Nombre">
-            <th mat-header-cell *matHeaderCellDef> <b>Areas Naturales de Buenos Aires</b> </th>
-        
-                    <mat-grid-tile mat-cell *matCellDef="let elementGrilla">
-                        <app-anp-cell [elementCell]="elementGrilla"></app-anp-cell>
-                    </mat-grid-tile>
-
+    <mat-card-content>
+        <mat-grid-list cols="3">
+                <mat-grid-tile *ngFor="let element of dataSource">
+                    <app-anp-cell [element]="element"></app-anp-cell>
+                </mat-grid-tile>         
         </mat-grid-list>
+    </mat-card-content>
 
-        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr class='area-element-row' mat-row *matRowDef="let elementGrilla; columns: columnsToDisplay;">
-    </tr>
-</mat-table>
-  <mat-paginator [pageSizeOptions]="[4,8, 16, 24, 32, 46]"></mat-paginator>
+    <mat-paginator [pageSizeOptions]="[4,8, 16, 24, 32, 46]"></mat-paginator>
 
 </div>
-
