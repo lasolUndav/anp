@@ -1,16 +1,17 @@
- <mat-card>
-    <mat-card-header class="mat-typography">
-        <mat-card-title>{{element.Nombre}}</mat-card-title>
-    </mat-card-header>
+ <mat-card class="Celda">
+    <mat-card-title class="mat-typography">
+        {{element.Nombre}}
+    </mat-card-title> 
     <mat-card-content>
-        <div class="mat-subheading-2">        
-            <img class="Imagen" src="assets/imagenes/areanatural.jpeg" aling="left" height="100" width="100">
-            {{element.Descripcion}}
-        </div>
         <div fxLayout="row">
-            <mat-accordion fxFlex="300px">
+            <mat-accordion fxFlex="430px">
                 <mat-expansion-panel>
-                    <mat-expansion-panel-header>
+                    
+                    <mat-expansion-panel-header collapsedHeight="350px" expandedHeight="300px">
+                        <div>
+                            <img class="Imagen" src="assets/imagenes/areanatural.jpeg" aling="left" height="100" width="100">
+                            {{element.Descripcion}}   
+                        </div>
                     </mat-expansion-panel-header>
                     <div fxLayout="row"  fxLayoutAlign="center">
                         <div class="mat-caption" style="font-weight: bold"> 
@@ -43,14 +44,6 @@
                             {{element.Superficie}} ha.
                         </div>
                     </div>
-                    <div fxLayout="row">
-                        <div class="mat-caption" style="font-weight: bold">
-                            Año de creación: 
-                        </div>
-                        <div class="mat-caption" style="margin-bottom: 0px">
-                            {{element.AnioCreacion}}
-                        </div>
-                     </div>
                 </mat-expansion-panel>
             </mat-accordion>
         </div>
