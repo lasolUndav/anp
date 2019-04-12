@@ -1,9 +1,6 @@
-table {
-  width: 100%;
-}
-
 .mat-card-header{
-  background: #67A759;
+  background:#0c1a03;
+  justify-content: center;
 }
 
 .mat-form-field {
@@ -14,6 +11,13 @@ table {
 .tipo-titulo{
   font-size: 150%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration-color: white;
   margin-top: 5%;
+}
+
+.mat-grid-tile .mat-figure{
+  margin-top: -55px !important; 
+}
+
+.mat-card{
+  padding-bottom: 120px !important;
 }

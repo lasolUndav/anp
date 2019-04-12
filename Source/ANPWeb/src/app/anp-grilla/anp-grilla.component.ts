@@ -6,8 +6,6 @@ import { AngularFireDatabase } from '@angular/fire/database';
   templateUrl: './anp-grilla.component.html',
   styleUrls: ['./anp-grilla.component.css']
 })
-// Hay que injectar un element
-//@Injectable()
 export class AnpGrillaComponent implements OnInit {
   columnsToDisplay = ['Nombre'];
   dataSource: any[];
