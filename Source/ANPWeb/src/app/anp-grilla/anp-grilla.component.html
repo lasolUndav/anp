@@ -1,24 +1,20 @@
 <div>
-<mat-form-field>
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar: ">
+    <mat-form-field>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput [formControl]= "search" placeholder="Ingrese un nombre">
     </mat-form-field>
 </div>
 <div class="mat-elevation-z8">
-
     <mat-card-header class="mat-tipography" style="color: white;">
         <mat-card-title class="tipo-titulo"><div class="mat-title"></div>
             Áreas Naturales Protegidas
         </mat-card-title>
     </mat-card-header>
-
     <mat-card-content>
         <mat-grid-list cols="3">
-                <mat-grid-tile *ngFor="let element of dataSource">
-                    <app-anp-cell class="app-cell" [element]="element"></app-anp-cell>
-                </mat-grid-tile>         
+            <mat-grid-tile *ngFor="let element of anpFiltrados">
+                <app-anp-cell [element]="element"></app-anp-cell>
+            </mat-grid-tile>         
         </mat-grid-list>
     </mat-card-content>
-
-    <mat-paginator [pageSizeOptions]="[4,8, 16, 24, 32, 46]"></mat-paginator>
-
 </div>

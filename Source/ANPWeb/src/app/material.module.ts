@@ -20,6 +20,9 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
 
 
 @NgModule({
+  imports:[
+      MatIconModule,
+  ],
   exports: [
     MatTableModule,
     MatFormFieldModule,
