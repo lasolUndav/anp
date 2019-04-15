@@ -1,4 +1,4 @@
- <mat-card class="celda">
+ <mat-card>
     <mat-card-header class="mat-typography titulo-anp">
         <mat-card-title>{{element.Nombre}}</mat-card-title>
 </mat-card-header> 
@@ -15,7 +15,7 @@
                     </mat-expansion-panel-header>
                     <div fxLayout="row"  fxLayoutAlign="center">
                         <div class="mat-caption" style="font-weight: bold"> 
-                            <a target="_blank" href="https://www.google.com.ar/maps/place/UNDAV+-+Sede+Piñeiro/@-34.6678335,-58.3990904,16z/data=!4m5!3m4!1s0x95bccc99175285c5:0xf1127b65d1fd6569!8m2!3d-34.6685291!4d-58.3981195?hl=es"> 
+                            <a target="_blank" href = "https://www.google.com/maps/search/?api=1&query={{element.Latitud}},{{element.Longitud}}"> 
                                 Como llegar 
                             </a>
                         </div>
