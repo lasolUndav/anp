@@ -12,7 +12,9 @@
       "Municipio" : "San isidro",
       "Nombre" : "Paisaje Protegido \"Bosque Alegre\"",
       "PlanManejo" : "No",
-      "Superficie" : 3.0
+      "Superficie" : 3.0,
+      "Longitud" : -58.398119,
+      "Latitud" : -34.668520
     }, {
       "Administracion" : "Mixta",
       "AnioCreacion" : 1999.0,
@@ -26,7 +28,9 @@
       "Municipio" : "La Plata",
       "Nombre" : "Paisaje Protegido \"Cuenca del arroyo El Pescado\"",
       "PlanManejo" : "No",
-      "Superficie" : 40000.0
+      "Superficie" : 40000.0,
+      "Longitud" : -122.3316393,
+      "Latitud" : 47.5951518
     }, {
       "Administracion" : "Mixta",
       "AnioCreacion" : 2001.0,
@@ -40,7 +44,9 @@
       "Municipio" : "Ensenada y Berisso",
       "Nombre" : "Paisaje Protegido \"Monte Ribereño Isla Paulino - Isla Santiago\"",
       "PlanManejo" : "No",
-      "Superficie" : 2300.0
+      "Superficie" : 2300.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Mixta",
       "AnioCreacion" : 2007.0,
@@ -54,7 +60,9 @@
       "Municipio" : "La Plata",
       "Nombre" : "Paisaje Protegido \"Reserva Parque - Paseo del bosque\"",
       "PlanManejo" : "No",
-      "Superficie" : 115.0
+      "Superficie" : 115.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Mixta",
       "AnioCreacion" : 1999.0,
@@ -68,7 +76,9 @@
       "Municipio" : "San Martín",
       "Nombre" : "Paisaje Protegido Barrio Parque Residencial Suhr Horeis ",
       "PlanManejo" : "No",
-      "Superficie" : 22.0
+      "Superficie" : 22.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Privada",
       "AnioCreacion" : 2013.0,
@@ -82,7 +92,9 @@
       "Municipio" : "Tigre",
       "Nombre" : "Paisaje Protegido Delta Terra",
       "PlanManejo" : "Si",
-      "Superficie" : 40.0
+      "Superficie" : 40.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2009.0,
@@ -96,7 +108,9 @@
       "Municipio" : "San Isidro",
       "Nombre" : "Parque  Natural  Municipal Barranca de la Quinta Los Ombúes ",
       "PlanManejo" : "Si",
-      "Superficie" : 1.0
+      "Superficie" : 1.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1999.0,
@@ -110,7 +124,9 @@
       "Municipio" : "La Plata",
       "Nombre" : "Parque Ecológico Municipal (Ambiente Pastizal Pampeano)",
       "PlanManejo" : "No",
-      "Superficie" : 45.0
+      "Superficie" : 45.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1989.0,
@@ -124,7 +140,9 @@
       "Municipio" : "Moreno",
       "Nombre" : "Parque Municipal Dique Ingeniero Roggero",
       "PlanManejo" : "Si",
-      "Superficie" : 1000.0
+      "Superficie" : 1000.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2009.0,
@@ -138,7 +156,9 @@
       "Municipio" : "San Isidro",
       "Nombre" : "Parque Natural Municipal Barranca Pueyrredón",
       "PlanManejo" : "Si",
-      "Superficie" : 1.5
+      "Superficie" : 1.5,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2002.0,
@@ -152,7 +172,9 @@
       "Municipio" : "Quilmes",
       "Nombre" : "Parque Natural y Reserva Ecológica Municipal Selva Marginal Quilmeña",
       "PlanManejo" : "No",
-      "Superficie" : 150.0
+      "Superficie" : 150.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1986.0,
@@ -166,7 +188,9 @@
       "Municipio" : "C.A.B.A.",
       "Nombre" : "Parque Natural y Zona de Reserva Costanera Sur",
       "PlanManejo" : "Si",
-      "Superficie" : 353.0
+      "Superficie" : 353.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Mixta",
       "AnioCreacion" : 1999.0,
@@ -180,7 +204,9 @@
       "Municipio" : "Florencio Varela",
       "Nombre" : "Parque Provincial Guillermo Enrique Hudson",
       "PlanManejo" : "Si",
-      "Superficie" : 54.0
+      "Superficie" : 54.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 1949.0,
@@ -194,7 +220,9 @@
       "Municipio" : "Berazategui, Florencio Varela, La Plata y Ensenada",
       "Nombre" : "Parque Provincial Pereyra Iraola",
       "PlanManejo" : "No",
-      "Superficie" : 4000.0
+      "Superficie" : 4000.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2000.0,
@@ -208,7 +236,9 @@
       "Municipio" : "San Fernando",
       "Nombre" : "Reserva de Biosfera Delta del Paraná",
       "PlanManejo" : "Si",
-      "Superficie" : 88624.0
+      "Superficie" : 88624.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 2010.0,
@@ -222,7 +252,9 @@
       "Municipio" : "Zárate",
       "Nombre" : "Reserva de Uso Múltiple Isla Botija ",
       "PlanManejo" : "No",
-      "Superficie" : 4108.0
+      "Superficie" : 4108.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2012.0,
@@ -236,7 +268,9 @@
       "Municipio" : "C.A.B.A.",
       "Nombre" : "Reserva Ecológica Ciudad Universitaria - Costanera Norte",
       "PlanManejo" : "No",
-      "Superficie" : 35.0
+      "Superficie" : 35.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1994.0,
@@ -250,7 +284,9 @@
       "Municipio" : "Avellaneda",
       "Nombre" : "Reserva Ecológica Municipal La Saladita ",
       "PlanManejo" : "No",
-      "Superficie" : 22.0
+      "Superficie" : 22.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2012.0,
@@ -264,7 +300,9 @@
       "Municipio" : "C.A.B.A.",
       "Nombre" : "Reserva Lago Lugano ",
       "PlanManejo" : "Si",
-      "Superficie" : 36.0
+      "Superficie" : 36.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1988.0,
@@ -278,7 +316,9 @@
       "Municipio" : "San Isidro",
       "Nombre" : "Reserva Municipal Refugio Educativo Ribera Norte",
       "PlanManejo" : "Si",
-      "Superficie" : 50.0
+      "Superficie" : 50.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2015.0,
@@ -292,7 +332,9 @@
       "Municipio" : "La Matanza",
       "Nombre" : "Reserva Natural Ciudad Evita ",
       "PlanManejo" : "No",
-      "Superficie" : 300.0
+      "Superficie" : 300.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2015.0,
@@ -306,7 +348,9 @@
       "Municipio" : "Avellaneda",
       "Nombre" : "Reserva Natural Costera de Avellaneda ",
       "PlanManejo" : "No",
-      "Superficie" : 130.0
+      "Superficie" : 130.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2011.0,
@@ -320,7 +364,9 @@
       "Municipio" : "Morón",
       "Nombre" : "Reserva Natural de Morón",
       "PlanManejo" : "Si",
-      "Superficie" : 14.5
+      "Superficie" : 14.5,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Privada",
       "AnioCreacion" : 2017.0,
@@ -334,7 +380,9 @@
       "Municipio" : "Zárate",
       "Nombre" : "Reserva Natural de Toyota",
       "PlanManejo" : "Si",
-      "Superficie" : 23.0
+      "Superficie" : 23.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 1969.0,
@@ -348,7 +396,9 @@
       "Municipio" : "Tigre",
       "Nombre" : "Reserva Natural de Uso Múltiple Isla Martín García ",
       "PlanManejo" : "No",
-      "Superficie" : 200.0
+      "Superficie" : 200.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 1996.0,
@@ -362,7 +412,9 @@
       "Municipio" : "Campana",
       "Nombre" : "Reserva Natural de Uso Múltiple Río Luján",
       "PlanManejo" : "No",
-      "Superficie" : 1257.0
+      "Superficie" : 1257.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1991.0,
@@ -376,7 +428,9 @@
       "Municipio" : "Pilar",
       "Nombre" : "Reserva Natural del Pilar ",
       "PlanManejo" : "Si",
-      "Superficie" : 297.0
+      "Superficie" : 297.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Privada",
       "AnioCreacion" : 2012.0,
@@ -390,7 +444,9 @@
       "Municipio" : "Campana",
       "Nombre" : "Reserva Natural El Morejón",
       "PlanManejo" : "Si",
-      "Superficie" : 110.0
+      "Superficie" : 110.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Mixta",
       "AnioCreacion" : 2006.0,
@@ -404,7 +460,9 @@
       "Municipio" : "Cañuelas",
       "Nombre" : "Reserva Natural Guardia del Juncal ",
       "PlanManejo" : "No",
-      "Superficie" : 129.0
+      "Superficie" : 129.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 1999.0,
@@ -418,7 +476,9 @@
       "Municipio" : "Tigre",
       "Nombre" : "Reserva Natural Integral Delta en Formación",
       "PlanManejo" : "No",
-      "Superficie" : 30841.0
+      "Superficie" : 30841.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 1943.0,
@@ -432,7 +492,9 @@
       "Municipio" : "Ensenada y Berazategui",
       "Nombre" : "Reserva Natural Integral Punta Lara",
       "PlanManejo" : "No",
-      "Superficie" : 6000.0
+      "Superficie" : 6000.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Mixta",
       "AnioCreacion" : 2012.0,
@@ -446,7 +508,9 @@
       "Municipio" : "Esteban Echeverría",
       "Nombre" : "Reserva Natural Integral y Mixta Laguna de Rocha ",
       "PlanManejo" : "No",
-      "Superficie" : 630.0
+      "Superficie" : 630.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 2011.0,
@@ -460,7 +524,9 @@
       "Municipio" : "San Vicente",
       "Nombre" : "Reserva Natural Lagunas de San Vicente ",
       "PlanManejo" : "No",
-      "Superficie" : 132.0
+      "Superficie" : 132.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1991.0,
@@ -474,7 +540,9 @@
       "Municipio" : "Lomas de Zamora",
       "Nombre" : "Reserva Natural Municipal Santa Catalina ",
       "PlanManejo" : "Si",
-      "Superficie" : 16.5
+      "Superficie" : 16.5,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1983.0,
@@ -488,7 +556,9 @@
       "Municipio" : "Vicente López",
       "Nombre" : "Reserva Natural Municipal Vicente Lopez",
       "PlanManejo" : "Si",
-      "Superficie" : 3.0
+      "Superficie" : 3.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Nacional",
       "AnioCreacion" : 1990.0,
@@ -502,7 +572,9 @@
       "Municipio" : "Campana",
       "Nombre" : "Reserva Natural Otamendi ",
       "PlanManejo" : "Si",
-      "Superficie" : 4088.0
+      "Superficie" : 4088.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 2011.0,
@@ -516,7 +588,9 @@
       "Municipio" : "Marcos paz",
       "Nombre" : "Reserva Natural Provincial de Objetivo Definido Educativo \"Arroyo el Durazno\"",
       "PlanManejo" : "No",
-      "Superficie" : 435.0
+      "Superficie" : 435.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 2011.0,
@@ -530,7 +604,9 @@
       "Municipio" : "Lomas de Zamora",
       "Nombre" : "Reserva Natural Provincial Santa Catalina",
       "PlanManejo" : "No",
-      "Superficie" : 728.0
+      "Superficie" : 728.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1991.0,
@@ -544,7 +620,9 @@
       "Municipio" : "Berazategui",
       "Nombre" : "Reserva Natural Selva Marginal de Hudson ",
       "PlanManejo" : "No",
-      "Superficie" : 1200.0
+      "Superficie" : 1200.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2016.0,
@@ -558,7 +636,9 @@
       "Municipio" : "San Miguel",
       "Nombre" : "Reserva Natural Urbana \"El Corredor\" ",
       "PlanManejo" : "No",
-      "Superficie" : 8.0
+      "Superficie" : 8.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 2013.0,
@@ -572,7 +652,9 @@
       "Municipio" : "Marcos Paz",
       "Nombre" : "Reserva Paleontologica \"Francisco Moreno\" ",
       "PlanManejo" : "Si",
-      "Superficie" : 25.0
+      "Superficie" : 25.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Privada",
       "AnioCreacion" : 2000.0,
@@ -586,7 +668,9 @@
       "Municipio" : "Escobar",
       "Nombre" : "Reserva Privada Club Náutico Escobar",
       "PlanManejo" : "No",
-      "Superficie" : 9.0
+      "Superficie" : 9.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Privada",
       "AnioCreacion" : 1996.0,
@@ -600,7 +684,9 @@
       "Municipio" : "Ituzaingó y Hurlingham",
       "Nombre" : "Reserva Privada del CEAMSE \"Santa María\"",
       "PlanManejo" : "Si",
-      "Superficie" : 43.5
+      "Superficie" : 43.5,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Privada",
       "AnioCreacion" : 1991.0,
@@ -614,7 +700,9 @@
       "Municipio" : "Escobar",
       "Nombre" : "Reserva Privada el Talar de Belén ",
       "PlanManejo" : "No",
-      "Superficie" : 90.0
+      "Superficie" : 90.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Municipal",
       "AnioCreacion" : 1973.0,
@@ -628,7 +716,9 @@
       "Municipio" : "Luján",
       "Nombre" : "Reserva Urbana Quinta Cigordia",
       "PlanManejo" : "Si",
-      "Superficie" : 15.0
+      "Superficie" : 15.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     }, {
       "Administracion" : "Provincial",
       "AnioCreacion" : 1998.0,
@@ -642,6 +732,8 @@
       "Municipio" : "Zárate, Campana y Delta en Formación",
       "Nombre" : "Monumento Natural Ciervo de los Pantanos",
       "PlanManejo" : "No",
-      "Superficie" : 0.0
+      "Superficie" : 0.0,
+      "Longitud" : -34.668520,
+      "Latitud" : -58.398119
     } ]
 }
