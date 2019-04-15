@@ -1,3 +1,24 @@
-.Imagen{
+.celda{
+    padding-top: 34px;
+    padding-bottom: 120px;
+}
+
+.img-imagen{
     margin-right: 10px;
+    align-content:"left";
+    float: left;
+}
+
+.mat-expansion-panel-header{
+    font-weight: 399;
+    margin-top: -70px;
+}
+
+.titulo-anp{
+    background:#9ae99d;
+    height: 50px;
+}
+
+.mat-card-title{
+    margin: 5px 20px !important;
 }
