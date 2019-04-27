@@ -13,7 +13,7 @@ export class AnpGrillaComponent implements OnInit {
   dataSource: any[];
   anpFiltrados: any[];
   search= new FormControl('');
-  
+
   constructor( db: AngularFireDatabase) {
     db.list('AreasNaturalesProtegidas').valueChanges().subscribe(results=>{
       this.dataSource = (results);
@@ -30,10 +30,10 @@ export class AnpGrillaComponent implements OnInit {
     var valueToFilter = anp.Nombre.toLowerCase();
     return valueToFilter.indexOf(filterValue)>=0;
   }
-  
+
   ngOnInit() {
-    this.search.valueChanges.pipe(debounceTime(1000)).subscribe((filterValue: string)=>this.applyFilter(filterValue)));
+    this.search.valueChanges.pipe(debounceTime(1000)).subscribe((filterValue: string)=>this.applyFilter(filterValue));
   }
-  
-   
+
+
 }
