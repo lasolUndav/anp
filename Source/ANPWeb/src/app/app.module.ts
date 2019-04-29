@@ -19,6 +19,7 @@ import { AnpDetailsComponent } from './anp-details/anp-details.component';
 import { AnpGrillaComponent } from './anp-grilla/anp-grilla.component';
 import { AnpDetailComponent } from './anp-detail/anp-detail.component';
 import { AnpCellComponent } from './anp-cell/anp-cell.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -59,6 +60,7 @@ const useBing = false;
     ReactiveFormsModule,
     MaterialModule,
     BrowserModule,
+    FlexLayoutModule
   ],
   bootstrap: [AppComponent],
   entryComponents:[AnpDetailComponent],
