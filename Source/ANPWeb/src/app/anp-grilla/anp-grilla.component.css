@@ -15,9 +15,30 @@
 }
 
 .mat-grid-tile .mat-figure{
-  margin-top: -55px !important; 
+  margin-top: -55px !important;
 }
 
 .mat-card{
   padding-bottom: 120px !important;
+}
+
+.light-text {
+  color: white;
+}
+.dark-text {
+  color: black;
+}
+
+mat-grid-list mat-grid-tile {
+  cursor: pointer;
+}
+
+mat-grid-list mat-grid-tile mat-grid-tile-footer {
+  background-color: black;
+  opacity: 0.7;
+}
+
+mat-grid-list mat-grid-tile:hover {
+  background-color: black;
+  opacity: 0.8;
 }

@@ -2,6 +2,8 @@ import { Component, OnInit, } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { debounceTime } from 'rxjs/operators';
 import { FormControl } from '@angular/forms';
+import {MatDialog} from '@angular/material';
+import { AnpDetailComponent } from '../anp-detail/anp-detail.component';
 
 @Component({
   selector: 'app-anp-grilla',
@@ -13,8 +15,10 @@ export class AnpGrillaComponent implements OnInit {
   dataSource: any[];
   anpFiltrados: any[];
   search= new FormControl('');
+  numberColumnsToDisplay: number;
 
-  constructor( db: AngularFireDatabase) {
+
+  constructor(public dialog: MatDialog, db: AngularFireDatabase) {
     db.list('AreasNaturalesProtegidas').valueChanges().subscribe(results=>{
       this.dataSource = (results);
       this.anpFiltrados = (results);
@@ -33,7 +37,17 @@ export class AnpGrillaComponent implements OnInit {
 
   ngOnInit() {
     this.search.valueChanges.pipe(debounceTime(1000)).subscribe((filterValue: string)=>this.applyFilter(filterValue));
+    this.numberColumnsToDisplay = (window.innerWidth <= 400) ? 1 : 3;
   }
 
+  onResize(event) {
+    this.numberColumnsToDisplay = (event.target.innerWidth <= 400) ? 1 : 3;
+  }
 
+  selectAnp(anp){
+    const dialogRef = this.dialog.open(AnpDetailComponent, {
+      width: this.numberColumnsToDisplay === 1 ?  '250px' : '350px',
+      data: anp
+    });
+  }
 }

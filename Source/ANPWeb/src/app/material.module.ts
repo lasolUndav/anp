@@ -1,23 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Ng2OdometerModule } from 'ng2-odometer';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { 
+import {
    MatTableModule,
-   MatPaginatorIntl, 
-   MatFormFieldModule, 
-   MatPaginatorModule, 
+   MatPaginatorIntl,
+   MatFormFieldModule,
+   MatPaginatorModule,
    MatInputModule,
    MatCardModule,
    MatIconModule,
-   MatSortModule, 
+   MatSortModule,
    MatGridListModule,
    MatExpansionModule,
    MatDialogModule,
    MatButtonModule,
   } from '@angular/material';
-  
-import { PaginatorProvider } from './shared/PaginatorProvider';
-
 
 @NgModule({
   imports:[
@@ -36,9 +33,10 @@ import { PaginatorProvider } from './shared/PaginatorProvider';
     MatGridListModule,
     MatExpansionModule,
     MatButtonModule,
+    MatDialogModule
   ],
   providers: [
-    { provide: MatPaginatorIntl, useClass: PaginatorProvider }
+    { provide: MatPaginatorIntl }
   ],
   declarations: []
 })

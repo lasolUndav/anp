@@ -1,6 +1,40 @@
-<div>
-  <mat-dialog-content >
-    {{element.Nombre}}
-  </mat-dialog-content>
+<h1 mat-dialog-title>{{data.Nombre}}</h1>
+<div mat-dialog-content>
+  <p>{{data.Descripcion}}</p>
+  <div fxShow fxHide.xs='true' fxShow.gt-xs='true'>
+    <div fxLayout="row">
+      <div class="mat-caption" style="font-weight: bold">
+          Ecorregión:
+      </div>
+      <div class="mat-caption" style="margin-bottom: 0px">
+          {{data.Ecoregion}}
+      </div>
+    </div>
+    <div fxLayout="row">
+        <div class="mat-caption" style="font-weight: bold">
+            Ubicación:
+        </div>
+        <div class="mat-caption" style="margin-bottom: 0px">
+            {{data.Localidad}}, {{data.Municipio}}
+        </div>
+    </div>
+    <div fxLayout="row">
+        <div class="mat-caption" style="font-weight: bold">
+            Superficie:
+        </div>
+        <div class="mat-caption" style="margin-bottom: 0px">
+            {{data.Superficie}} ha.
+        </div>
+    </div>
+  </div>
+  <div fxLayout="row"  fxLayoutAlign="center">
+    <div class="mat-caption" style="font-weight: bold">
+        <a target="_blank" href = "https://www.google.com/maps/search/?api=1&query={{data.Latitud}},{{data.Longitud}}">
+          ¿Cómo llegar?
+        </a>
+    </div>
+  </div>
+</div>
+<div mat-dialog-actions>
   <button mat-raised-button (click)="closeData()"> ok </button>
 </div>

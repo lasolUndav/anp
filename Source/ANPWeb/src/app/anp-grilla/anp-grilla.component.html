@@ -11,10 +11,14 @@
         </mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <mat-grid-list cols="3">
-            <mat-grid-tile *ngFor="let element of anpFiltrados">
-                <app-anp-cell [element]="element"></app-anp-cell>
-            </mat-grid-tile>         
+        <mat-grid-list rowHeight="3:2" [cols]="numberColumnsToDisplay" (window:resize)="onResize($event)">
+            <mat-grid-tile *ngFor="let anp of anpFiltrados" (click)='selectAnp(anp);'>
+              <mat-grid-tile-footer class="mat-caption">
+                <h3>{{anp.Nombre}}</h3>
+              </mat-grid-tile-footer>
+              <div style="width: 100%; height: 100%; background-size: calc(100%) calc(100%); background-image: url(assets/imagenes/areanatural.jpeg)">
+              </div>
+            </mat-grid-tile>
         </mat-grid-list>
     </mat-card-content>
 </div>

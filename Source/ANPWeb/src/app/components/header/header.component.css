@@ -5,7 +5,7 @@
     color: white;
     position: relative;
 }
-.header:before{ /* PARA HACER EL COLOR DE LA IMAGEN MAS OSCURA */ 
+.header:before{ /* PARA HACER EL COLOR DE LA IMAGEN MAS OSCURA */
     position: absolute;
     content: '';
     background: rgba(0, 0, 0, .2);
@@ -15,7 +15,7 @@
     top: 0;
 }
 .adelante{
-    z-index: 2000; /* PARA QUE EL TEXTO SE MUESTRE POR ENCIMA DEL EFECTO QUE QUITA BRILLO */
+    z-index: 1000; /* PARA QUE EL TEXTO SE MUESTRE POR ENCIMA DEL EFECTO QUE QUITA BRILLO */
 }
 .sombra{
     text-shadow: 0 0 30px black;
@@ -30,7 +30,7 @@
 .flecha-abajo{
     margin-bottom: 15px;
     width: 90px;
-    animation: flecha-animada 1.8s ease-in-out infinite; 
+    animation: flecha-animada 1.8s ease-in-out infinite;
 }
 
 @keyframes flecha-animada{ /* ANIMACION DE LA FLECHA */

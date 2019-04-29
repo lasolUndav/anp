@@ -1,5 +1,5 @@
-import { Component, OnInit, Input} from '@angular/core';
-import { MatDialogRef } from '@angular/material';
+import { Component, OnInit, Inject} from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 
 @Component({
@@ -9,17 +9,15 @@ import { MatDialogRef } from '@angular/material';
 })
 export class AnpDetailComponent implements OnInit {
 
-  @Input('element')
-  element: any;
-  
-  constructor(public thisDialogRef: MatDialogRef<AnpDetailComponent>) {
-    
+  constructor(public dialogRef: MatDialogRef<AnpDetailComponent>, @Inject(MAT_DIALOG_DATA) public data) {
+
   }
 
   ngOnInit() {
   }
-  closeData(){
-    this.thisDialogRef.close('Close');
+
+  closeData() {
+    this.dialogRef.close('Close');
   }
 
 }
