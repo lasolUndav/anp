@@ -1,12 +1,8 @@
-<div class="header">
+<div class="header" (window:resize)="onResize($event)">
   <div fxFlex fxLayoutAlign='center center' fxLayout='column' class='mat-typography'>
-    <div class="adelante" fxFlex fxLayout='column' fxShow fxHide.xs='true' fxShow.gt-xs='true' fxLayoutAlign='center'>
-      <div class='mat-display-4 titulo sombra'>G.R.A.N.</div>
-      <div class="mat-display-1 sombra">Guía de Reservas y Áreas Naturales</div>
-    </div>
-    <div class="adelante" fxFlex fxLayout='column' fxShow fxShow.xs='true' fxHide.gt-xs='true' fxLayoutAlign='center'>
-      <div class='mat-display-1 titulo sombra'>G.R.A.N.</div>
-      <div class="mat-caption sombra">Guía de Reservas y Áreas Naturales</div>
+    <div class="adelante" fxFlex fxLayout='column' fxLayoutAlign='center'>
+      <div [class]='classForMainTitle'>G.R.A.N.</div>
+      <div [class]='classForSubTitle'>Guía de Reservas y Áreas Naturales</div>
     </div>
     <a class="flecha-abajo adelante sombra" (click)="navigate('flecha')"><img src="assets/icons/flecha-abajo.png" alt="flecha"></a></div>
   </div>
