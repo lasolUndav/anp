@@ -1,9 +1,12 @@
 import { Component, OnInit, } from '@angular/core';
+import { catchError, debounceTime, map } from 'rxjs/operators';
+
 import { AngularFireDatabase } from '@angular/fire/database';
-import { debounceTime } from 'rxjs/operators';
-import { FormControl } from '@angular/forms';
-import {MatDialog} from '@angular/material';
 import { AnpDetailComponent } from '../anp-detail/anp-detail.component';
+import { FormControl } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import {MatDialog} from '@angular/material';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-anp-grilla',
@@ -18,7 +21,7 @@ export class AnpGrillaComponent implements OnInit {
   numberColumnsToDisplay: number;
 
 
-  constructor(public dialog: MatDialog, db: AngularFireDatabase) {
+  constructor(public dialog: MatDialog, db: AngularFireDatabase, private httpClient: HttpClient) {
     db.list('AreasNaturalesProtegidas').valueChanges().subscribe(results=>{
       this.dataSource = (results);
       this.anpFiltrados = (results);
@@ -49,5 +52,9 @@ export class AnpGrillaComponent implements OnInit {
       width: this.numberColumnsToDisplay === 1 ?  '250px' : '350px',
       data: anp
     });
+  }
+
+  getUrlAttrValueFor(anp){
+    return `url(assets/imagenes/previews/${anp.Id}.jpg)`;
   }
 }

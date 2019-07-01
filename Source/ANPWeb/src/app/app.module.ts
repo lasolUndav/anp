@@ -1,21 +1,23 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AnpComponent } from './anp/anp.component';
+import { AnpDetailComponent } from './anp-detail/anp-detail.component';
+import { AnpGrillaComponent } from './anp-grilla/anp-grilla.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AnpComponent } from './anp/anp.component';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { MaterialModule } from './material.module';
-import { AnpGrillaComponent } from './anp-grilla/anp-grilla.component';
-import { AnpDetailComponent } from './anp-detail/anp-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from './material.module';
 
 var config = {
   apiKey: "AIzaSyAjoNbn9JeUPcoErpk35J9QAFz40vfno3c",
@@ -50,10 +52,12 @@ const useBing = false;
     ReactiveFormsModule,
     MaterialModule,
     BrowserModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent],
   entryComponents:[AnpDetailComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [HttpClientModule]
 })
 export class AppModule { }

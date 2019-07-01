@@ -16,7 +16,7 @@
               <mat-grid-tile-footer class="mat-caption">
                 <h3>{{anp.Nombre}}</h3>
               </mat-grid-tile-footer>
-              <div style="width: 100%; height: 100%; background-size: calc(100%) calc(100%); background-image: url(assets/imagenes/areanatural.jpeg)">
+              <div style="width: 100%; height: 100%; background-size: calc(100%) calc(100%);" [ngStyle]="{'background-image': getUrlAttrValueFor(anp) }">
               </div>
             </mat-grid-tile>
         </mat-grid-list>
