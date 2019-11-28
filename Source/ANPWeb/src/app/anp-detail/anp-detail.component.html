@@ -26,6 +26,38 @@
             {{data.Superficie}} ha.
         </div>
     </div>
+
+    <div fxLayout="row">
+      <div class="mat-caption" style="font-weight: bold">
+          Telefono/s: 
+      </div>
+      <div class="mat-caption" style="margin-bottom: 0px">
+          {{data.Telefono}}
+      </div>
+    </div>
+
+    <div fxLayout="row">
+      <div class="mat-caption" style="font-weight: bold">
+          Mail: 
+      </div>
+      <div class="mat-caption" style="margin-bottom: 0px">
+          {{data.Mail}}
+      </div>
+    </div>
+
+    <div fxLayout="row">
+      <div class="mat-caption" style="font-weight: bold">
+          Sitio Web: 
+      </div>
+      <div class="mat-caption" style="margin-bottom: 0px">
+        <a target="_blank" href = "http://{{data.PaginaWeb}}">
+          {{data.PaginaWeb}}
+        </a>
+      </div>
+    </div>
+
+
+
   </div>
   <div fxLayout="row"  fxLayoutAlign="center">
     <div class="mat-caption" style="font-weight: bold">
